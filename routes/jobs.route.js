@@ -17,7 +17,7 @@ router.route("/").post(demoUser, createJob).get(getAllJobs);
 router.route("/stats").get(showStats);
 
 router
-  .route(":/id")
+  .route("/:id")
   .get(getJob)
   .delete(demoUser, deleteJob)
   .patch(demoUser, updateJob);
